@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".singlevar.SingleVariableElectionActivity">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/textViewLandingSingleVariable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One Variable Equations"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="Which method do you want to run?"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+        <Button
+            android:id="@+id/buttonIncrementalSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/textColorButton"
+            android:layout_marginBottom="10dp"
+            android:onClick="incrementalSearch"
+            android:text="Incremental Search" />
+
+        <Button
+            android:id="@+id/buttonBisection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/textColorButton"
+            android:layout_marginBottom="10dp"
+            android:onClick="bisection"
+            android:text="Bisection Method" />
+
+        <Button
+            android:id="@+id/buttonFalseRule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/textColorButton"
+            android:layout_marginBottom="10dp"
+            android:onClick="falseRule"
+            android:text="False Rule Method" />
+
+        <Button
+            android:id="@+id/buttonFixedPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/textColorButton"
+            android:layout_marginBottom="10dp"
+            android:onClick="fixedPoint"
+            android:text="Fixed Point Method" />
+
+        <Button
+            android:id="@+id/buttonNewton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/textColorButton"
+            android:layout_marginBottom="10dp"
+            android:onClick="newton"
+            android:text="Newton's Method" />
+
+        <Button
+            android:id="@+id/buttonSecant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/textColorButton"
+            android:layout_marginBottom="10dp"
+            android:onClick="secant"
+            android:text="Secant method" />
+
+        <Button
+            android:id="@+id/buttonMultipleRoots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/textColorButton"
+            android:onClick="multipleRoots"
+            android:text="Multiple Roots" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

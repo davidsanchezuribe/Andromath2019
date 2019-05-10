@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.edu.eafit.andromath">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            android:theme="@style/AppTheme.NoActionBar"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".singlevar.SingleVariableLandingActivity">
+            android:theme="@style/AppTheme.NoActionBar"
+        </activity>
+        <activity android:name=".grapher.GrapherActivity">
+            android:theme="@style/AppTheme.NoActionBar"
+        </activity>
+        <activity android:name=".singlevar.SingleVariableElectionActivity" />
+        <activity android:name=".singlevar.methods.IncrementalSearchActivity" />
+        <activity android:name=".singlevar.methods.BisectionActivity" />
+        <activity android:name=".singlevar.methods.FalseRuleActivity" />
+        <activity android:name=".singlevar.methods.FixedPointActivity" />
+        <activity android:name=".singlevar.methods.NewtonActivity" />
+        <activity android:name=".singlevar.methods.SecantActivity" />
+        <activity android:name=".singlevar.methods.MultipleRootsActivity" />
+        <activity android:name=".linearsystems.LinearSystemsLandingActivity" />
+        <activity android:name=".linearsystems.LinearSystemElectionActivity" />
+        <activity android:name=".linearsystems.gaussianelimination.SimpleGaussEliminationActivity" />
+        <activity android:name=".linearsystems.gaussianelimination.PartialPivotingGaussEliminationActivity" />
+        <activity android:name=".linearsystems.gaussianelimination.TotalPivotingGaussEliminationActivity" />
+        <activity android:name=".linearsystems.lufactorization.SimpleGaussLUFactorizationActivity" />
+        <activity android:name=".linearsystems.lufactorization.PivotingGaussLUFactorizationActivity" />
+        <activity android:name=".linearsystems.directfactorization.DirectLUFactorizationActivity" />
+        <activity android:name=".linearsystems.iterativemethods.JacobiActivity" />
+        <activity android:name=".linearsystems.iterativemethods.GaussSeidelActivity" />
+        <activity android:name=".interpolation.InterpolationLandingActivity" />
+        <activity android:name=".interpolation.methods.NewtonPolynomialDDActivity" />
+        <activity android:name=".interpolation.methods.NewtonPolynomialActivity" />
+        <activity android:name=".interpolation.methods.NevillesMethodActivity" />
+        <activity android:name=".interpolation.methods.LagrangePolynomialActivity" />
+        <activity android:name=".interpolation.methods.BasedOnESActivity" />
+        <activity android:name=".interpolation.InterpolationChooseMethodActivity"/>
+        <activity android:name=".diff.DiffLandingActivity" />
+        <activity android:name=".diff.methods.FivePointDiffActivity" />
+        <activity android:name=".diff.methods.ThreePointDiffActivity" />
+        <activity android:name=".diff.methods.TwoPointActivity"></activity>
+    </application>
+
+</manifest>

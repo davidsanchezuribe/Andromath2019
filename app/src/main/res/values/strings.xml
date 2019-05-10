@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Andromath</string>
+
+    <string name="professor">FRANCISCO JOSÉ CORREA ZABALA</string>
+    <string name="memberIvan">IVÁN ANTONIO CÁRDENAS OCHOA</string>
+    <string name="memberJose">JOSÉ MARÍA MIRA BARRIENTOS</string>
+    <string name="memberCamilo">ANDRÉS CAMILO PÁEZ RÍOS</string>
+
+    <string name="enter_parameters">ENTER THE FOLLOWING PARAMETERS</string>
+    <string name="function">FUNCTION</string>
+    <string name="iterations">ITERATIONS</string>
+    <string name="continue_button">CONTINUE</string>
+    <string name="tolerance">TOLERANCE</string>
+    <string name="g_function">G(X)</string>
+    <string name="approximated_x">XA</string>
+    <string name="delta">DELTA</string>
+    <string name="value_x0">X0</string>
+    <string name="value_x1">X1</string>
+
+    <string name="xMin">XMIN</string>
+    <string name="xMax">XMAX</string>
+
+    <string name="table_iterations">ITER</string>
+    <string name="table_error">E</string>
+    <string name="table_function">F(X)</string>
+    <string name="table_function_xm">F(XM)</string>
+    <string name="table_function_xs">F(XS)</string>
+    <string name="table_function_xi">F(XI)</string>
+    <string name="table_xm">XM</string>
+    <string name="table_xs">XS</string>
+    <string name="table_xi">XI</string>
+    <string name="table_variable">X</string>
+    <string name="table_derivative">F\'(X)</string>
+    <string name="table_second_derivative">F\'\'(X)</string>
+
+    <string name="table_solution_x1">F(X1)</string>
+    <string name="table_function_x1">X1</string>
+
+    <string name="table_solution_x2">F(X2)</string>
+    <string name="table_function_x2">X2</string>
+
+    <string name="function_derivative">F\'(X)</string>
+    <string name="function_second_derivative">F\'\'(X)</string>
+
+
+    <string name="add_variable_button">ADD VARIABLE</string>
+
+    <string name="linear_equations_systems">LINEAR EQUATIONS SYSTEMS</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="fill_the_matrix">FILL THE MATRIX AB</string>
+
+    <string name="solution">SOLUTION</string>
+    <string name="solve">SOLVE SYSTEM</string>
+</resources>
