@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:text="[ ANDROMATH ]"
+            android:text="Numerical Functions App"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
             android:textSize="45dp"
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="SUPERVISED BY"
+            android:text="Professor:"
             android:textAlignment="center"
             android:textSize="16dp"
             android:textStyle="bold" />
@@ -58,21 +58,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="@string/memberIvan"
+            android:text="@string/memberDavid"
             android:textAlignment="center" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="@string/memberJose"
+            android:text="@string/memberSantiago"
             android:textAlignment="center" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="@string/memberCamilo"
+            android:text="@string/memberJulian"
             android:textAlignment="center" />
 
         <Space

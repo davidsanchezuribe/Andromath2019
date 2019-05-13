@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Andromath</string>
 
-    <string name="professor">FRANCISCO JOSÉ CORREA ZABALA</string>
-    <string name="memberIvan">IVÁN ANTONIO CÁRDENAS OCHOA</string>
-    <string name="memberJose">JOSÉ MARÍA MIRA BARRIENTOS</string>
-    <string name="memberCamilo">ANDRÉS CAMILO PÁEZ RÍOS</string>
+    <string name="professor">Edwar Samir Posada Trujillo</string>
+    <string name="memberDavid">David Sanchez Posada</string>
+    <string name="memberSantiago">Santiago Vásquez Zuluaga</string>
+    <string name="memberJulian">Julian Andrés Mesa Pareja</string>
 
     <string name="enter_parameters">ENTER THE FOLLOWING PARAMETERS</string>
     <string name="function">FUNCTION</string>

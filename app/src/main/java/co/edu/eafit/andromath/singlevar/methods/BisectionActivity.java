@@ -265,4 +265,8 @@ public class BisectionActivity extends AppCompatActivity {
             procedure.addView(tableRow);
         }
     }
+
+    private void agregarCeros(String result){
+        
+    }
 }
