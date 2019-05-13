@@ -38,6 +38,40 @@
                 android:textAlignment="center"
                 android:textAllCaps="true" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnFunction"
+                android:layout_width="150px"
+                android:layout_height="100px"
+                android:background="@drawable/button_shape"
+                android:onClick= "change"
+                android:text="F(x)"
+                android:textColor="@color/textColorButton"/>
+                <Button
+                    android:id="@+id/btnAcpFunction"
+                    android:layout_width="250px"
+                    android:layout_height="100px"
+                    android:background="@drawable/button_shape"
+                    android:onClick= "change2"
+                    android:text="Aceptar"
+                    android:textColor="@color/textColorButton"
+                    android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/EditFunction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:visibility="invisible"/>
+
             <TextView
                 android:id="@+id/textViewFunction"
                 android:layout_width="match_parent"
@@ -47,7 +81,7 @@
                 android:text="@string/function"
                 android:textAlignment="center"
                 android:textAllCaps="true" />
-
+            </LinearLayout>
             <EditText
                 android:id="@+id/editTextXMinValue"
                 android:layout_width="match_parent"

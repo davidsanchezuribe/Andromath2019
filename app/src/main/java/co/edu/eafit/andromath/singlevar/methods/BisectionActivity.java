@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Pair;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -36,11 +37,12 @@ public class BisectionActivity extends AppCompatActivity {
 
     private static final String tag = BisectionActivity.class.getSimpleName();   //
 
-    EditText xMinInput, xMaxInput, toleranceInput, iterationsInput;
+    EditText xMinInput, xMaxInput, toleranceInput, iterationsInput, EditFunction;
     TextView function, result, iterations, solution, xMin,
             xMed, xMax, tolerance, solutionA, solutionB;
-    Expression expression;
+    Expression expression, expression2;
     TableLayout procedure;
+    Button btnAcpFunction, btnFunction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +52,11 @@ public class BisectionActivity extends AppCompatActivity {
 
         xMinInput = (EditText) findViewById(R.id.editTextXMinValue);
         xMaxInput = (EditText) findViewById(R.id.editTextXMaxValue);
+        EditFunction = (EditText) findViewById(R.id.EditFunction);
         toleranceInput = (EditText) findViewById(R.id.editTextTolerance);
         iterationsInput = (EditText) findViewById(R.id.editTextIterations);
+        btnAcpFunction = (Button) findViewById(R.id.btnAcpFunction);
+        btnFunction = (Button) findViewById(R.id.btnFunction);
 
         function = (TextView) findViewById(R.id.textViewFunction);
         result = (TextView) findViewById(R.id.textViewResult);
@@ -64,7 +69,7 @@ public class BisectionActivity extends AppCompatActivity {
         super.onStart();
 
         Intent intent = getIntent();
-        String equation = "f(x) = " + intent.
+        String equation = intent.
                 getStringExtra(EQUATION);
         function.setText(equation);
 
@@ -73,6 +78,24 @@ public class BisectionActivity extends AppCompatActivity {
 
         procedure.setStretchAllColumns(true);
     }
+
+    public void change(View v){
+        EditFunction.setVisibility(View.VISIBLE);
+        EditFunction.setText(function.getText());
+        function.setVisibility(View.INVISIBLE);
+        btnAcpFunction.setVisibility(View.VISIBLE);
+        btnFunction.setVisibility(View.INVISIBLE);
+    }
+    public void change2(View v){
+        EditFunction.setVisibility(View.INVISIBLE);
+        function.setText(EditFunction.getText());
+        expression2 = new Expression(EditFunction.getText().toString());
+        expression = expression2;
+        function.setVisibility(View.VISIBLE);
+        btnAcpFunction.setVisibility(View.INVISIBLE);
+        btnFunction.setVisibility(View.VISIBLE);
+    }
+
 
     public void bisection(View v) {
 
@@ -267,7 +290,4 @@ public class BisectionActivity extends AppCompatActivity {
         }
     }
 
-    private void agregarCeros(String result){
-
-    }
 }
