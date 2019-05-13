@@ -198,7 +198,7 @@ public class SecantActivity extends AppCompatActivity {
         x1a = new TextView(this);
         x1a.setPadding(15, 10, 15, 10);
         x1a.setGravity(Gravity.CENTER);
-        x1a.setText(String.valueOf(x1));
+        x1a.setText(formatter.format(x1));
 
         fx1 = new TextView(this);
         fx1.setPadding(15, 10, 15, 10);
@@ -208,7 +208,7 @@ public class SecantActivity extends AppCompatActivity {
         x2a = new TextView(this);
         x2a.setPadding(15, 10, 15, 10);
         x2a.setGravity(Gravity.CENTER);
-        x2a.setText(String.valueOf(x2));
+        x2a.setText(formatter.format(x2));
 
         fx2 = new TextView(this);
         fx2.setPadding(15, 10, 15, 10);

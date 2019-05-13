@@ -192,7 +192,7 @@ public class NewtonActivity extends AppCompatActivity {
         approximatedX = new TextView(this);
         approximatedX.setPadding(15, 10, 15, 10);
         approximatedX.setGravity(Gravity.CENTER);
-        approximatedX.setText(String.valueOf(x));
+        approximatedX.setText(formatter.format(x));
 
         ySolution = new TextView(this);
         ySolution.setPadding(15, 10, 15, 10);
@@ -202,7 +202,7 @@ public class NewtonActivity extends AppCompatActivity {
         yDerivative = new TextView(this);
         yDerivative.setPadding(15, 10, 15, 10);
         yDerivative.setGravity(Gravity.CENTER);
-        yDerivative.setText(String.valueOf(dy));
+        yDerivative.setText(formatter.format(dy));
 
         tolerance = new TextView(this);
         tolerance.setPadding(15, 10, 15, 10);

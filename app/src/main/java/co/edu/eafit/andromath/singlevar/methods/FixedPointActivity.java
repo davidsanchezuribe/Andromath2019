@@ -180,7 +180,7 @@ public class FixedPointActivity extends AppCompatActivity {
         x = new TextView(this);
         x.setPadding(15, 10, 15, 10);
         x.setGravity(Gravity.CENTER);
-        x.setText(String.valueOf(xa));
+        x.setText(formatter.format(xa));
 
         fx = new TextView(this);
         fx.setPadding(15, 10, 15, 10);

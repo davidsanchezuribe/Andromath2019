@@ -186,7 +186,7 @@ public class MultipleRootsActivity extends AppCompatActivity {
         xa = new TextView(this);
         xa.setPadding(15, 10, 15, 10);
         xa.setGravity(Gravity.CENTER);
-        xa.setText(String.valueOf(x));
+        xa.setText(formatter.format(x));
 
         ya = new TextView(this);
         ya.setPadding(15, 10, 15, 10);

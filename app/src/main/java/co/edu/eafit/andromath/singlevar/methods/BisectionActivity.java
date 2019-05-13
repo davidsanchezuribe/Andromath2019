@@ -215,7 +215,8 @@ public class BisectionActivity extends AppCompatActivity {
         xMin = new TextView(this);
         xMin.setPadding(15, 10, 15, 10);
         xMin.setGravity(Gravity.CENTER);
-        xMin.setText(String.valueOf(xi));
+        //xMin.setText(String.valueOf(xi));
+        xMin.setText(formatter.format(xi));
 
         solutionA = new TextView(this);
         solutionA.setPadding(15, 10, 15, 10);
@@ -225,7 +226,7 @@ public class BisectionActivity extends AppCompatActivity {
         xMax = new TextView(this);
         xMax.setPadding(15, 10, 15, 10);
         xMax.setGravity(Gravity.CENTER);
-        xMax.setText(String.valueOf(xs));
+        xMax.setText(formatter.format(xs));
 
         solutionB = new TextView(this);
         solutionB.setPadding(15, 10, 15, 10);
@@ -235,7 +236,7 @@ public class BisectionActivity extends AppCompatActivity {
         xMed = new TextView(this);
         xMed.setPadding(15, 10, 15, 10);
         xMed.setGravity(Gravity.CENTER);
-        xMed.setText(String.valueOf(xm));
+        xMed.setText(formatter.format(xm));
 
         solution = new TextView(this);
         solution.setPadding(15, 10, 15, 10);
@@ -267,6 +268,6 @@ public class BisectionActivity extends AppCompatActivity {
     }
 
     private void agregarCeros(String result){
-        
+
     }
 }
