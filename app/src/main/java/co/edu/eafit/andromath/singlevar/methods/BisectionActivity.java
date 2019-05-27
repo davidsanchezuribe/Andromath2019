@@ -134,10 +134,6 @@ public class BisectionActivity extends AppCompatActivity {
         String message;
 
         boolean displayProcedure;
-
-        //Method Begins
-        //yi = f(xi)
-        //ys = f(xs)
         try {
             BigDecimal xi = BigDecimal.valueOf(Double.parseDouble(xMinInput.getText().toString()));
             BigDecimal xs = BigDecimal.valueOf(Double.parseDouble(xMaxInput.getText().toString()));
@@ -147,33 +143,24 @@ public class BisectionActivity extends AppCompatActivity {
 
             BigDecimal yi = expression.with(VARIABLE, xi).eval();
             BigDecimal ys = expression.with(VARIABLE, xs).eval();
-            //yi = 0
             if (niter < 0) {
                 message = INVALID_ITER.getMessage();
                 displayProcedure = INVALID_ITER.isDisplayProcedure();
             } else if (yi.compareTo(BigDecimal.ZERO) == 0) {
                 message = X_ROOT.getMessage();
                 displayProcedure = X_ROOT.isDisplayProcedure();
-                //ys = 0
 
             } else if (ys.compareTo(BigDecimal.ZERO) == 0) {
                 message = X_ROOT.getMessage();
                 displayProcedure = X_ROOT.isDisplayProcedure();
-                // ys*yi < 0
             } else if (yi.multiply(ys).compareTo(BigDecimal.ZERO) < 0) {
-                //xm = (xi + xs)/2
                 BigDecimal xm = (xi.add(xs)).divide(BigDecimal.valueOf(2));
-                //ym = f(xm)
                 BigDecimal ym = expression.with("x", xm).eval();
                 int count = 1;
-                //error = tolerance + 1
                 BigDecimal error = tol.add(BigDecimal.ONE);
 
-                //error > tolerance && ym != 0 && count < niter
                 tableIterations.add(createProcedureIteration(count, xi, xs, yi, ys, xm, ym, error));
-                //while ( ym != 0 and e > tolerance and count < iter) do
                 while (ym.compareTo(BigDecimal.ZERO) != 0 && error.compareTo(tol) > 0 && count < niter) {
-                    //yi*ys < 0
                     if (yi.multiply(ym).compareTo(BigDecimal.ZERO) < 0) {
                         xs = xm;
                         ys = ym;

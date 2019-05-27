@@ -129,7 +129,7 @@
             android:onClick="InterpolationButton"
             android:text="Interpolation"
             android:textColor="@color/textColorButton" />
-        <Button
+        <!--<Button
             android:id="@+id/buttonDiff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
             android:background="@drawable/button_shape"
             android:onClick="DiffButton"
             android:text="Differentiation"
-            android:textColor="@color/textColorButton" />
+            android:textColor="@color/textColorButton" /> -->
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
